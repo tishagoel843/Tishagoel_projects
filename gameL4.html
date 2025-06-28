@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name='viewport' content='width=device-width, initial-scale=0.1'>
+   <meta name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+   <title>Games|Dashboard</title>
+   <!-- js links start -->
+   <!-- js links end -->
+   <!-- css link start -->
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <link rel="stylesheet" href="css/animate.css" />
+   <link rel="stylesheet" href="css/fonts.css" />
+   <link rel="stylesheet" href="css/style.css" />
+   <!-- <script src="../../../js/audio.js"></script> -->
+
+   <!-- css link end -->
+</head>
+
+<body>
+   <span id="myDiv" style="display: none;">
+      <div class="baseRotate">
+         <div class="modScreen">
+            <img src="images/mobileScreen.gif" />
+            <br />
+            Please rotate your screen then play the game.
+         </div>
+      </div>
+   </span>
+   <div class="loadingPop" id="loading" style="display: none;">
+      <div class="lodDiv">
+         <div class="loader">
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+            <div class="inner_loader"></div>
+         </div>
+      </div>
+   </div>
+   <div id="allData" class="d-none">
+      <img src="images/Basket.png">
+
+
+      <img src="images/start.png">
+   </div>
+   <div class="start"> <a href="index.html"> <strong><img src="images/BG0.s.png"></strong> </a> </div>
+   <div class="mainlevelstart">
+
+      <div class="modallevl">
+
+         <div class="levelblok animate__animated animate__backInDown">
+            <img src="images/boards.png" class="w-100">
+            <div class="inst">Welcome to Level-4 </div>
+            <div class="startNow1" onclick="startgame()">Start Now</div>
+
+         </div>
+
+      </div>
+   </div>
+ 
+   <div class="score1">
+      <img src="images/levelNameTop.png" class="w-100">
+      <div class="lname1">The Wheel and transport</div>
+
+   </div>
+
+   <div class="back">
+
+      <div class="imgbox">
+         <img class="bgbody" src="images/bg.jpg" />
+
+         <div class="dragarea">
+            <div class="box1" id="">
+               <img src="images/optcircle.png" class="w-100" />
+               <div id="ans2" class="bottombox1"><img src="images/woodenstick.png" class="w-100" /></div>
+            </div>
+            <div class="box2">
+               <img src="images/optcircle.png" class="w-100" />
+               <div class="bottomboxa1" id="ans4"><img src="images/woodenPack.png" class="w-100" /></div>
+
+            </div>
+            <div class="box3">
+               <img src="images/optcircle.png" class="w-100" />
+               <div id="ans1" class="bottombox1b"><img src="images/rock.png" class="w-100" /></div>
+            </div>
+          
+         </div>
+         <div class="dropArea">
+            <!-- <div class="boy">
+
+               <img src="images/boy.png" class="w-100" />
+            </div> -->
+            <div class="basket">
+               <div id="drop1"></div>
+               <img src="images/Basket.png" class="w-100" />
+
+            </div>
+         </div>
+         <div class="textrock">
+            <img class="w-100" src="images/textbox.gif" />
+            <div class="qvalue">Drag and Drop the materials in basket to build a cart that helps early humans carry loads and transport goods. </div>
+
+         </div>
+         <div class="rocktile">
+
+            <img class="w-100" src="images/man1.png" />
+         </div>
+   <!-- <div class="snow">
+
+            <img class="w-100" src="images/snow.gif" />
+         </div> -->
+    
+         <div id="wow" style="display: none;">
+            <div class="popup_status animate__animated animate__rotateInDownLeft"
+               onclick="window.open('','_self').close();">
+               <div class="flash ">
+                  <img src="images/Fire.gif" class="w-100">
+
+               </div>
+               <div class="completed">Great work</div>
+               <div class="completedLine">You built a cart to help early humans carry heavy loads and travel farther. Transportation just got earlier. </div>
+               <div class="nextbtn">
+
+                  <a href="../l5/index.html">
+                     <img src="images/levelNameTop.png" class="w-100" />
+                     <div class="nextpart" onclick="">NEXT</div>
+                  </a>
+               </div>
+               
+            </div>
+         </div>
+         <div id="tryAgainError1" style="display: none;">
+            <div class="mainPop">
+               <div class="smsData animate__animated animate__fadeInDown">
+                  <img src="images/modal.png">
+                  <img class="sadImgs shadow-sm" src="images/sad.gif">
+                  <div class="oops">Oops! Try Again.</div>
+                  <div class="okBtns" onclick="hideError()">OK!</div>
+               </div>
+            </div>
+         </div>
+
+
+
+
+      </div>
+   </div>
+   <div class="headers">
+      <input type="hidden" value="" id="fill_1" style="position: absolute; top: 40%;" />
+
+   </div>
+
+   <img src="images/comp.gif" class="anar" id="anar">
+
+
+
+   <script src="js/jquery.js"></script>
+   <script src="js/jquery.ui.js"></script>
+   <script src="js/javaScript.js"></script>
+   <script src="js/touch.punch.js"></script>
+</body>
+
+</html>
